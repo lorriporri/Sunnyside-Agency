@@ -1,0 +1,249 @@
+@media screen and (max-width: 576px) {
+  ul {
+    display: block;
+  }
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  padding: 16px 0;
+  -webkit-box-shadow: 0px 4px 26px 1px rgba(120, 120, 120, 0.42);
+  box-shadow: 0px 4px 26px 1px rgba(120, 120, 120, 0.42);
+  position: fixed;
+  top: 0;
+  height: auto;
+  right: 0;
+  width: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background-color: #fff;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    padding: 0;
+  }
+}
+
+.navigation .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.navigation .socials a {
+  width: auto;
+  height: auto;
+}
+
+.navigation .socials a img {
+  max-height: 20px;
+}
+
+.navigation .branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .branding .logo {
+  max-width: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .branding .logo {
+    max-width: 40px;
+    margin: 16px;
+  }
+}
+
+.navigation .branding .brand {
+  display: none;
+  font-weight: 600;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .branding .brand {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.navigation .col-5.none {
+  width: 300px;
+}
+
+.navigation .navi {
+  position: relative;
+}
+
+.navigation .navi a.icon {
+  display: block;
+  color: #2b2b2b;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  z-index: 3;
+  width: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .navi a.icon {
+    display: none;
+  }
+}
+
+.navigation .navi ul {
+  display: none;
+  position: absolute;
+  height: auto;
+  width: 90vw;
+  left: 55%;
+  top: -1rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 2rem;
+  background-color: #cc9d47;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .navi ul {
+    position: relative;
+  }
+  .navigation .navi ul:after {
+    width: 100vw;
+    height: 1px;
+    background-color: #f4f3f3;
+    position: absolute;
+    top: 0;
+    content: '';
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .navi ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 16px 0;
+    background: none;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: auto;
+    top: 0;
+    padding: 0;
+  }
+}
+
+.navigation .navi ul li {
+  list-style: none;
+  padding: 16px 0;
+}
+
+.navigation .navi ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .navi ul li a {
+    color: #2b2b2b;
+  }
+  .navigation .navi ul li a:hover {
+    color: #cc9d47;
+  }
+}
+
+.navigation .navi ul li a:hover, .navigation .navi ul li a.active {
+  color: #2b2b2b;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .navi ul li a:hover, .navigation .navi ul li a.active {
+    color: #cc9d47;
+  }
+}
+
+.navigation .navi ul #links {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navAdd {
+  border-top: 1px solid #f4f3f3;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navAdd {
+    margin-bottom: 0;
+  }
+}
+
+.navAdd ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navAdd ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navAdd ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.navAdd ul li {
+  list-style: none;
+  margin: .5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .navAdd ul li {
+    margin: 16px;
+  }
+}
+
+.navAdd ul li a {
+  text-decoration: none;
+  color: #2b2b2b;
+}

@@ -1,0 +1,9 @@
+.navigation #toggle {
+  width: auto;
+}
+
+.navigation #toggle span {
+  height: 3px;
+  width: 15px;
+  color: #2b2b2b;
+}
