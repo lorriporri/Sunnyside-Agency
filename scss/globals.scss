@@ -1,6 +1,7 @@
-$gap : 16px;
-$rowMaxWidth: 1440px;
-$small: 576px;
+
+$maxWidth: 1355px;
+$gap: 18px;
+$small: 375px; 
 $medium: 768px;
 $large: 1200px;
 
@@ -9,13 +10,16 @@ $secondary:#807054;
 $light:#f4f3f3;
 $dark:#2b2b2b;
 $link:#9fb3cc;
-
+$mainFont: 'Mulish', sans-serif;
+$secondaryFont:'Fraunces', serif;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: $mainFont;
     line-height: 1.5em;
+
+    
     
     // background-color: #eeeeee;
 }

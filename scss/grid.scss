@@ -1,7 +1,7 @@
 
-$maxWidth: 1200px;
+$maxWidth: 1355px;
 $gap: 16px;
-$small: 576px; 
+$small: 375px; 
 $medium: 768px;
 $large: 1200px;
 
@@ -11,7 +11,7 @@ $large: 1200px;
 	margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: $maxWidth;
     position: relative;
     display: flex;
     flex: 0 1 auto;
@@ -23,6 +23,7 @@ $large: 1200px;
     padding-right: 16px;
     &.middle{
      align-items: center;
+     justify-content: center;
     }
     &.full{
       height: 100%;

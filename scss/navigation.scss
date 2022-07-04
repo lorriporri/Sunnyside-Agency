@@ -1,4 +1,4 @@
-$gap : 16px;
+$gap : 18px;
 $rowMaxWidth: 1440px;
 $small: 576px;
 $medium: 768px;
@@ -9,105 +9,46 @@ $secondary:#807054;
 $light:#f4f3f3;
 $dark:#2b2b2b;
 $link:#9fb3cc;
+$mainFont: 'Mulish', sans-serif;
+$secondaryFont:'Fraunces', serif;
 
-@media screen and (max-width: $small){
-    ul{
-        display: block;
-    }
-}
+
 
     
-    .navigation{
-      position: fixed;
-      top: 0;
-      padding: $gap 0;
-      -webkit-box-shadow: 0px 4px 26px 1px rgba(120,120,120,0.42);
-      -moz-box-shadow: 0px 4px 26px 1px rgba(120,120,120,0.42);
-      box-shadow: 0px 4px 26px 1px rgba(120,120,120,0.42);
-      @media screen and (min-width:$large) {
-        padding: 0;
-      }
-        .socials{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
-            a{
-                width: auto;
-                height: auto;
-                img{
-                   max-height: 20px;
-                }
-    
-            }
-        }
-        .branding{
-            display: flex;
-            align-items: center;
-            .logo{
-                max-width: 30px;
-                @media screen and (min-width:$large) {
-                    max-width: 40px;
-                    margin: $gap;
-                   
-                }
-            }
-            .brand{
-                display: none;
-                font-weight: 600;
-                margin-left: $gap;
-                @media screen and (min-width:$large) {
-                    display:inline-block;
-                    width: auto;
-                    margin-bottom: 0;
-                }
-            }
-
-        }
-        .col-5.none{
-            width: 300px;
-        }
-        position: fixed;
-        top: 0;
+    .navi{
         height: auto;
-        right: 0;
         width: 100%;
         transform: translateX(0);
-        background-color:#fff;
         z-index: 99999;
         display: flex;
+    
         align-items: center;
-
-        .navi{
+        @media screen and (min-width:$medium){
+            display: flex;
+            align-content: flex-end;
+            justify-content: flex-end;
+        }
+     
+        @media screen and (min-width:$large) {
+            padding: 0;
+            
+        }
+        .navigation{
             position: relative;
-            a{
-                &.icon {
-                    // background: black;
-                    display: block;
-                    color: $dark;
-                    position: absolute;
-                    right: 5px;
-                    top: 10px;
-                    z-index: 3;
-                    width: 30px;
-                    // padding: $gap;
-                    @media screen and (min-width: $large){
-                        display: none;
-                    }
-                }   
+            font-weight: 700;
+            font-size: 16px;
+            @media screen and (min-width:$medium){
+                display:flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                align-content: flex-end;
             }
             ul{
                 @media screen and (min-width:$large) {
                     position: relative;
-                    &:after{
-                        width: 100vw;
-                        height: 1px;
-                        background-color: $light;
-                        position: absolute;
-                        top: 0;
-                        content: '';
-                    }
+                  
                 }
+                list-style: none;
                 display: none;
                 position: absolute;
                 height: auto;
@@ -119,10 +60,11 @@ $link:#9fb3cc;
                 background-color:$primary;
 
                 z-index: 2;
-                @media screen and (min-width: $large) {
+                @media screen and (min-width: $medium) {
                     position: relative;
-                    display: flex;
-                    width: 100%;
+                    display: inline-flex;
+
+                    width: auto;
                     height: auto;
                     justify-content: space-around;
                     padding: $gap 0;
@@ -131,7 +73,7 @@ $link:#9fb3cc;
                     left: auto;
                     top: 0;
                     padding: 0;
-                    
+                   
                 }
                 li{
                     list-style: none;
@@ -139,8 +81,21 @@ $link:#9fb3cc;
                     a{
                         text-decoration: none;
                         color: #fff;
+                        letter-spacing: -20;
+                        
+                        &.contact{
+                            background-color: #fff;
+                            border-radius: 35px;
+                            font-family: $secondaryFont;
+                            text-transform: uppercase;
+                            letter-spacing: normal;
+                            font-weight: 700;
+                            color: #2b2b2b;
+                        }
+
                         @media screen and (min-width: $large){
-                            color: $dark;
+                            // color: $dark;
+                            padding:  18px 25px 18px 25px;
                             &:hover{
                               color: $primary;
 
@@ -155,7 +110,7 @@ $link:#9fb3cc;
                         
                       }
                     }
-                      
+                  
                    
                 }
                 #links{
