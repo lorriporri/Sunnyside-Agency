@@ -23,6 +23,18 @@ $secondaryFont:'Fraunces', serif;
         display: flex;
     
         align-items: center;
+        #logo{
+            height: 100%;
+            display: flex;
+            width: 100%;
+            & img.logo{
+                width: 120px;
+                height: auto;
+                display: block;
+                object-fit: contain;
+            }
+
+        }
         @media screen and (min-width:$medium){
             display: flex;
             align-content: flex-end;

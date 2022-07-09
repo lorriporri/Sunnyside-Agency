@@ -11,6 +11,20 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.navi #logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.navi #logo img.logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 @media screen and (min-width: 768px) {
   .navi {
     display: -webkit-box;
