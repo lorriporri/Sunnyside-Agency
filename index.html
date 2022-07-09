@@ -11,121 +11,120 @@
     <link rel="stylesheet" href="/scss/css/globals.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | Sunnyside agency landing page</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <meta name="Description" content="Frontend Mentor | Sunnyside agency landing page">
   
 </head>
 <body class="index">
-    <section>
-      <div class="header">
-          <div class="navi">
-              <div class="row between">
-                <div class="col large-3">
-
-                </div>
-                  <div class="col large-6">
-                      <div class="navigation">
-                        <ul>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Services</a></li>
-                          <li><a href="#">Projects</a></li>
-                          <li ><a class="contact" href="#">contact</a></li>
-                        </ul>
-                      </div>
-                  </div>
-                  
-               </div>
-          </div>
-           
-            <div class="row middle full">
-                <div class="col ">
-                    <div id="claim">
-                        <p class="claim">
-                            We are Creatives
-                        </p>
+    <div class="header">
+        <div class="navi">
+            <div class="row between middle">
+            <div class="col small-3 large-3">
+                <img src="./images/logo.svg" alt="">
+            </div>
+                <div class="col small-6 large-6">
+                <button id="button"><img src="/images/icon-hamburger.svg" alt=""></button>
+                <script>
+                    document.getElementById('button').onclick = function() {
+                        var navigation = document.querySelector('.navigation');
+                        navigation.classList.contains('show') ? 
+                        navigation.classList.remove('show') : 
+                        navigation.classList.add('show');
+                        }
+                </script>
+                    <div class="navigation">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li ><a class="contact" href="#">contact</a></li>
+                    </ul>
                     </div>
                 </div>
-                <div class="col medium-5">
-                   
-                        <img class="img" src="/images/girl_working1.png" alt="">
-                    
-                
             </div>
-                    
-            
-           
-    
         </div>
-
-    </section>
-       
-
-    
-    
-
-   
-
-<section>
-    <div class="content space first responsive ">
-       <div class="row middle full">
-           <div class="col large-6">
-                <div class="img">
-                    <img src="/images/Desktop1.png" alt="">
+        <div class="row middle full">
+            <div class="col ">
+                <div id="claim">
+                    <p class="claim">
+                        We are Creatives
+                    </p>
                 </div>
-           </div>
-           <div class="col large-6">
-            <h1>
-                Responsive Webdesign
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur porro corrupti ex debitis aliquid quis rem ducimus nam, nihil aperiam officiis repellendus soluta est, non amet? Repudiandae quae recusandae tempore?
-            </p>
-            <p></p>
-        </div>
-       </div>
-    </div>
-
-</section>
-
-
-<section>
-    <div class="content space first responsive ">
-        <div class="row middle full between">
-            <div class="col large-5">
-                <h2>Portfolio</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quam obcaecati, dicta asperiores sapiente dolorum reiciendis sequi distinctio velit temporibus illo est enim commodi? Dolorum ex nobis omnis animi natus.</p>
             </div>
-            <div class="col large-5">
-                <img src="/images/portfolio.png" alt="">
+    </div>
+</div>
+<div class="main">
+    <div class="row ">
+        <div class="first">
+            <div class="col large-6">
+                <div class="inside">
+                    <h1>Transform your brand</h1>
+                    <p>
+                        We are a full-service creative agency specializing in helping brands grow fast. Engage your clients trough compelling visuals that do most of the marketing for.
+                    </p>
+                    <a href="" class="btn">Learn more</a>
+
+                </div>
+            </div>
+            <div class="col large-6">
+               <img class="img breakright" src="/images/desktop/image-transform.jpg" alt="">
             </div>
         </div>
-    </div>
 
-</section>
-    <div id="footer" class="space last first">
-      <div class="content space last responsive">
-          <div class="row middle">
-              <div class="col large-2">
-                  <img class="icons" src="/images/js.png" alt="">
-              </div>
-              <div class="col large-2">
-                <img class="icons" src="/images/ps.png" alt="">
-            </div>
-            <div class="col large-2">
-                <img class="icons" src="/images/ai.png" alt="">
-            </div>
-            <div class="col large-2">
-                <img class="icons" src="/images/id.png" alt="">
-            </div>
-            <div class="col large-2">
-                <img class="icons" src="/images/css.png" alt="">
-            </div>
-            <div class="col large-2">
-                <img class="icons" src="/images/html.png" alt="">
-            </div>
-          </div>
-      </div>
     </div>
-   
+    <div class="row">
+        <div class="second">
+            <div class="col large-6">
+                <img class="img breakleft" src="/images/desktop/image-stand-out.jpg" alt="">
+            </div>
+            <div class="col large-6">
+                <div class="inside">
+                    <h2>Stand out the right audience</h2>
+                    <p>
+                        Usind collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+                    </p>
+                    <a href="" class="btn">Learn more</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="third">
+            <div class="col large-6">
+                <img class="img breakleft" src="/images/desktop/image-graphic-design.jpg" alt="">
+                <div class="text">
+                    <p class="h2">
+                        Graphic Design
+                    </p>
+                    <p class="center">
+                        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+                    </p>
+                </div>
+            </div>
+            <div class="col large-6">
+                <img class="img breakleft" src="/images/desktop/image-photography.jpg" alt="">
+                <div class="text">
+                    <p class="h2">
+                        Photography
+                    </p>
+                    <p>
+                       Increase your credibility by getting the most stunning, high-quallity photos that improve your buisness image. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="space last first">
+    <div class="content space last responsive">
+        <div class="row middle">
+            
+        </div>
+    </div>
+</div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>
+    </script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </body>
 </html>

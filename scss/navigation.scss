@@ -33,15 +33,39 @@ $secondaryFont:'Fraunces', serif;
             padding: 0;
             
         }
+        #button{
+            background: none;
+            border: none;
+            float: right;
+            right: 20px;
+            @media screen and (min-width:$medium){
+                display: none;
+            }
+        }
         .navigation{
-            position: relative;
+            height: 0;
+            position: absolute;
             font-weight: 700;
             font-size: 16px;
+            right: -150px;
+            // &::after{
+            //     content: url(/images/icon-hamburger.svg);
+            // }
+            overflow: hidden;
+            &.show{
+               right: 0;
+                height: auto;
+                top: 30px;
+                  
+            }
             @media screen and (min-width:$medium){
+                height: auto;
+                position: relative;
                 display:flex;
                 align-items: flex-end;
                 justify-content: flex-end;
                 align-content: flex-end;
+                right: 0;
             }
             ul{
                 @media screen and (min-width:$large) {
@@ -49,15 +73,15 @@ $secondaryFont:'Fraunces', serif;
                   
                 }
                 list-style: none;
-                display: none;
-                position: absolute;
+                // display: none;
+                // position: absolute;
                 height: auto;
-                width: 90vw;
-                left: 55%;
-                top: -1rem;
-                transform: translateX(-50%);
-                padding: 2rem;
-                background-color:$primary;
+                // width: 90vw;
+                // left: 55%;
+                // top: -1rem;
+                // transform: translateX(-50%);
+                // padding: 2rem;
+                // background-color:$primary;
 
                 z-index: 2;
                 @media screen and (min-width: $medium) {
@@ -93,7 +117,7 @@ $secondaryFont:'Fraunces', serif;
                             color: #2b2b2b;
                         }
 
-                        @media screen and (min-width: $large){
+                        @media screen and (min-width: $medium){
                             // color: $dark;
                             padding:  18px 25px 18px 25px;
                             &:hover{

@@ -54,7 +54,9 @@ body.index{
 }
 .header{
     
-    
+    height: 100vh;
+        background-size: cover;
+        background-image: url(/images/mobile/image-header.jpg);
    color: $light;
     @media screen and (min-width:$large) {
         height: 100vh;
@@ -113,4 +115,49 @@ body.index{
 
 .content{
     height: 100%;
+}
+
+.main{
+    // margin: 3rem 0;
+    overflow: hidden;
+    ;
+    .first, .second, .second{
+        // padding: 8rem 0;
+        overflow: hidden;
+        // margin: 3rem 0;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        
+    }
+    .inside{
+        margin: auto 3rem;
+    }
+    .text{
+        position: relative;
+        bottom: 22rem;
+        max-width: 50%;
+        width: 37rem;
+        text-align:center;
+        right: -10rem;
+        p{
+            color: $light;
+        }
+    }
+    .img{
+        // position: absolute;
+        top: 0;
+        max-width: 50vw;
+        transform: translateX(-18px);
+        height: auto;
+        &.breakleft{
+            left: 0;
+            
+
+        }
+        &.breakright{
+            right: 0;
+        }
+    }
 }

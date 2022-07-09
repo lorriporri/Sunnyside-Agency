@@ -1,0 +1,1 @@
+const NaviOpen = document.getElementById(Button);
