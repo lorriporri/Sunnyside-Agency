@@ -56,12 +56,12 @@ body.index{
     
     height: 100vh;
         background-size: cover;
-        background-image: url(images/mobile/image-header.jpg);
+        background-image: url(/images/mobile/image-header.jpg);
    color: $light;
     @media screen and (min-width:$large) {
         height: 100vh;
         background-size: cover;
-        background-image: url(images/desktop/image-header.jpg);
+        background-image: url(/images/desktop/image-header.jpg);
     }
 
     #claim{
