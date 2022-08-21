@@ -1,3 +1,4 @@
+@use 'variables';
 
 $maxWidth: 1355px;
 $gap: 16px;
@@ -7,12 +8,10 @@ $large: 1200px;
 
 $primary:#cc9d47;
 $secondary:#807054;
-$light:#f4f3f3;
 $dark:#2b2b2b;
 $link:#9fb3cc;
-$mainFont: 'Mulish', sans-serif;
+$mainFont: 'Mulish', sans-serif;   
 $secondaryFont:'Fraunces', serif;
-
 
 .row {  
   margin-left: auto;
@@ -27,18 +26,21 @@ $secondaryFont:'Fraunces', serif;
   justify-content: flex-start;
   align-items: stretch;
 
+  @media screen and (min-width:$small){
+    max-width: 325px;
+  }
   &.full {
     max-width: none;
   }
 
-  .row {
+  
    margin-left: -#{rem($gap)};
     // margin-left: calc(-($gap));
     padding-left: 0;
     padding-right: 0;
     max-width: calc(100% + #{rem($gap * 2)});
     width: calc(100% + #{rem($gap * 2)});
-  }
+  
 
   > .row {
     margin-left:0;
@@ -67,25 +69,6 @@ $secondaryFont:'Fraunces', serif;
 }
 
 
-
-
-
-
-// .col-1,
-// .col-2,
-// .col-3,
-// .col-4,
-// .col-5,
-// .col-6,
-// .col-7,
-// .col-8,
-// .col-9,
-// .col-10,
-// .col-11,
-// .col-12 {
-//   width: 100%;
-//   max-width: $maxWidth -;
-// }
 .col-1 {max-width: 8.33%; flex-basis: 8.33%}
 .col-2 {max-width: 16.66%; flex-basis: 16.66%}
 .col-3 {max-width: 25%; flex-basis: 25%}
@@ -102,8 +85,8 @@ $secondaryFont:'Fraunces', serif;
     flex-basis: 100%;
     width: 100%;
     float: left; 
-    padding-left: $gap; 
-    padding-right: $gap; 
+    // padding-left: $gap; 
+    // padding-right: $gap; 
     flex: 0 0 auto; 
     flex-grow: 1; 
 }
