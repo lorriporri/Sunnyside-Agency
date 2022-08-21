@@ -13,13 +13,18 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <meta name="Description" content="Frontend Mentor | Sunnyside agency landing page">
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&display=swap" rel="stylesheet"> 
 </head>
 <body class="index">
     <div class="header">
         <div class="navi">
-            <div class="row between middle">
-            <div class="col small-3 large-6">
+            <div class="row">
+            <div class="col small-6 large-6">
                 <div id="logo">
                     <img class="logo" src="images/logo.svg" alt="">
 
@@ -33,6 +38,7 @@
                         navigation.classList.contains('show') ? 
                         navigation.classList.remove('show') : 
                         navigation.classList.add('show');
+                        
                         }
                 </script>
                     <div class="navigation">
@@ -47,85 +53,127 @@
             </div>
         </div>
         <div class="row middle full">
-            <div class="col ">
+           
                 <div id="claim">
                     <p class="claim">
                         We are Creatives
                     </p>
                 </div>
-            </div>
+           
+        </div>
     </div>
 </div>
 <div class="main">
-    <div class="row ">
-        <div class="first">
-            <div class="col large-6">
-                <div class="inside">
-                    <h1>Transform your brand</h1>
-                    <p>
-                        We are a full-service creative agency specializing in helping brands grow fast. Engage your clients trough compelling visuals that do most of the marketing for.
-                    </p>
-                    <a href="" class="btn">Learn more</a>
-
-                </div>
-            </div>
-            <div class="col large-6">
-               <img class="img breakright" src="images/desktop/image-transform.jpg" alt="">
-            </div>
+    <div class="container first">
+        <div class="text-first">
+            <h1>Transform your brand</h1>
+            <p>
+                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients trough compelling visuals that do most of the marketing for.
+            </p>
+            <a href="" class="btn">Learn more</a>
         </div>
-
-    </div>
-    <div class="row">
-        <div class="second">
-            <div class="col large-6">
-                <img class="img breakleft" src="images/desktop/image-stand-out.jpg" alt="">
-            </div>
-            <div class="col large-6">
-                <div class="inside">
-                    <h2>Stand out the right audience</h2>
-                    <p>
-                        Usind collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
-                    </p>
-                    <a href="" class="btn">Learn more</a>
-
-                </div>
-            </div>
+        <div class="img-right">
+            <img class="img breakright" src="images/desktop/image-transform.jpg" alt="">
         </div>
     </div>
-    <div class="row">
-        <div class="third">
-            <div class="col large-6">
-                <img class="img breakleft" src="images/desktop/image-graphic-design.jpg" alt="">
-                <div class="text">
-                    <p class="h2">
-                        Graphic Design
-                    </p>
-                    <p class="center">
-                        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
-                    </p>
-                </div>
+    <div class="container second">
+        <div class="img-left">
+            <img class="img breakleft" src="images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="text-second">
+            <h2>Stand out the right audience</h2>
+            <p>
+                Usind collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+            </p>
+            <a href="" class="btn">Learn more</a>
+        </div>
+    </div>
+    <div class="container third">
+        <div class="img-inner first">
+            <p class="h2">
+                Graphic Design
+            </p>
+            <p class="center">
+                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+            </p>
+        </div>
+        <div class="img-inner second">
+            <p class="h2">
+                Photography
+            </p>
+            <p>
+               Increase your credibility by getting the most stunning, high-quallity photos that improve your buisness image. 
+            </p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <h5>Testimonials</h5>
+        <div class="inner-container">
+            <div class="inner">
+                <img src="" alt="">
+                <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                <p class="name">Emily R.<span>Marketing Director</span></p>
             </div>
-            <div class="col large-6">
-                <img class="img breakleft" src="images/desktop/image-photography.jpg" alt="">
-                <div class="text">
-                    <p class="h2">
-                        Photography
-                    </p>
-                    <p>
-                       Increase your credibility by getting the most stunning, high-quallity photos that improve your buisness image. 
-                    </p>
-                </div>
+             <div class="inner">
+                <img src="" alt="">
+                <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                <p class="name">Thomas S.<span>Chief Operating Officer</span></p>
             </div>
+            <div class="inner">
+                <img src="" alt="">
+                <p>  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                <p class="name">Jennie F.<span>Business Owner</span></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="images-container">
+        <div class="inner">
+            <img src="/images/desktop/image-gallery-milkbottles.jpg" alt="">
+        </div>
+        <div class="inner">
+            <img src="/images/desktop/image-gallery-orange.jpg" alt="">
+        </div>
+        <div class="inner">
+            <img src="/images/desktop/image-gallery-cone.jpg" alt="">
+        </div>
+        <div class="inner">
+            <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt="">
         </div>
     </div>
 </div>
 
 <div id="footer" class="space last first">
-    <div class="content space last responsive">
-        <div class="row middle">
-            
-        </div>
+  <div class="logo">
+
+  </div>
+  <div class="navi">
+    <ul>
+        <li>
+            <a href="">About</a>
+        </li>
+        <li>
+            <a href="">Services</a>
+        </li>
+        <li>
+            <a href="">Projects</a>
+        </li>
+    </ul>
+  </div>
+  <div class="socials">
+    <div class="facebook">
+        <img src="/images/icon-facebook.svg" alt="">
     </div>
+    <div class="instagram">
+<img src="/images/icon-instagram.svg" alt="">
+    </div>
+    <div class="twitter">
+<img src="/images/icon-twitter.svg" alt="">
+    </div>
+    <div class="pinterest">
+<img src="/images/icon-pinterest.svg" alt="">
+    </div>
+  </div>
 </div>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>
     </script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
