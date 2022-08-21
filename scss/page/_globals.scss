@@ -1,9 +1,22 @@
+@use '../helpers/variables';
 
 $maxWidth: 1355px;
 $gap: 18px;
 $small: 375px; 
 $medium: 768px;
 $large: 1200px;
+
+$soft-red:#fe7867;
+$yellow:#fad400;
+$dark-cyan:#25564b; //graphic design text
+$dark-blue: #19536b; //photography text
+$medium-cyan: #458c7e; //footer
+
+$very-dark-blue: #23303e;
+$very-dark-grayish-blue: #5a636c; 
+$dark-grayish-blue: #818498; 
+$grayish-blue:#a7abae;
+$white: #ffffff;
 
 $primary:#cc9d47;
 $secondary:#807054;
@@ -37,7 +50,7 @@ img{
     height: auto;
     max-width: 100%;
     width: auto;
-    max-height: 80vh;
+    // max-height: 80vh;
     &.icons{
         padding: 2rem;
     }
@@ -47,6 +60,8 @@ p{
     font-family: $mainFont;
     color: $dark;
     padding-bottom: $gap;
+    font-weight: 600;
+    letter-spacing: normal;
 }
 a{
     color: $link;
@@ -73,10 +88,8 @@ a.btn{
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.h1,.h2,.h3,.h4{
     font-family: $secondaryFont;
+    font-weight: 900;
     color: $dark;
-    text-transform: uppercase;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
     font-weight: 500;
     display: block;
     margin-bottom: 2rem;

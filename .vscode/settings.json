@@ -1,0 +1,9 @@
+{
+    "liveSassCompile.settings.compileOnWatch": true,
+    "liveSassCompile.settings.excludeList": [
+        "/scss/helpers/",
+        "/scss/page/"
+       
+    ]
+    
+}
