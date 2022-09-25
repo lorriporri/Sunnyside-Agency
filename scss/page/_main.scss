@@ -128,7 +128,7 @@ body.index{
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
         
         &.first{
             @media screen and (min-width:$large) {
@@ -148,9 +148,11 @@ body.index{
         -ms-flex-order: 1;
         order: 1;
         width: 100%;
-        img{
+        
+        .img{
+            // transform: translateX(-6px) !important;
             top: 0;
-            max-width: 50vw;
+            min-width: 50vw;
             height: auto;
             max-height: 100%;
         }
@@ -161,9 +163,10 @@ body.index{
         -ms-flex-order: 1;
         // order: 1;
         width: 100%;
-        img{
+        .img{
             top: 0;
-            max-width: 50vw;
+            // transform: translateX(-1px) !important;
+            min-width: 50vw;
             // -webkit-transform: translateX(18px);
             // transform: translateX(18px);
             // height: auto;
@@ -178,9 +181,27 @@ body.index{
         .img-inner{
             display: flex;
             justify-content: end;
+            text-align: center;
         flex-flow: column;
         background-size: cover;
         background-position: center center;
+        padding: 350px 35px 50px; 
+        &.second{
+            p{
+                color: $dark-blue;
+
+            }
+        }
+        &.first{
+            p{
+                color: $dark-cyan;
+            }
+        }
+        p{
+            margin-bottom: 0;
+           
+           
+        }
         @media screen and (min-width:$large) {
             min-height: 36rem;
         }
@@ -214,14 +235,25 @@ body.index{
         margin: auto 3rem;
     }
     .text{
-        position: relative;
-        bottom: 22rem;
-        max-width: 50%;
-        width: 37rem;
-        text-align:center;
-        right: -10rem;
+        display: block;
+        margin:65px  35px;
+        text-align: center;
+        
+        @media screen and (min-width:$large){
+            position: relative;
+            bottom: 22rem;
+            max-width: 50%;
+            width: 37rem;
+            text-align:center;
+            right: -10rem;
+        }
+        
         p{
-            color: $white;
+            color: $very-dark-grayish-blue;
+            @media screen and (min-width:$large){
+                color: $white;
+
+            }
         }
     }
   
