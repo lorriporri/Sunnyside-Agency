@@ -1,36 +1,35 @@
-@use '../helpers/variables';
+@import '../helpers/variables';
 
-$maxWidth: 1355px;
-$gap: 18px;
-$small: 375px; 
-$medium: 768px;
-$large: 1200px;
+// $maxWidth: 1355px;
+// $gap: 18px;
+// $small: 375px; 
+// $medium: 768px;
+// $large: 1200px;
 
-$soft-red:#fe7867;
-$yellow:#fad400;
-$dark-cyan:#25564b; //graphic design text
-$dark-blue: #19536b; //photography text
-$medium-cyan: #458c7e; //footer
+// $soft-red:hsl(7, 99%, 70%);
+// $yellow:hsl(51, 100%, 49%);
+// $very-dark-blue-cyan:hsl(167, 40%, 24%); //graphic design text
+// $dark-blue: hsl(198, 62%, 26%); //photography text
+// $medium-cyan: hsl(168, 34%, 41%); //footer
 
-$very-dark-blue: #23303e;
-$very-dark-grayish-blue: #5a636c; 
-$dark-grayish-blue: #818498; 
-$grayish-blue:#a7abae;
-$white: #ffffff;
+// $very-dark-blue: hsl(212, 27%, 19%);
+// $very-dark-grayish-blue: hsl(213, 9%, 39%); 
+// $dark-grayish-blue: sl(232, 10%, 55%); 
+// $grayish-blue:hsl(210, 4%, 67%);
+// $white: #ffffff;
 
-$primary:#cc9d47;
-$secondary:#807054;
-$light:#f4f3f3;
-$dark:#2b2b2b;
-$link:#9fb3cc;
-$mainFont: 'Mulish', sans-serif;
-$secondaryFont:'Fraunces', serif;
+// $primary:#cc9d47;
+// $secondary:#807054;
+// $white:#f4f3f3;
+// $dark:#2b2b2b;
+// $link:#9fb3cc;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $mainFont;
-    line-height: 1.5em;
+    line-height: 1.4em;
     ::before, ::after {
         box-sizing: inherit;
       }
@@ -58,16 +57,19 @@ img{
 
 p{
     font-family: $mainFont;
-    color: $dark;
+    color: $very-dark-grayish-blue;
     padding-bottom: $gap;
     font-weight: 600;
     letter-spacing: normal;
+    font-size: 18px;
+    line-height: 1.7em;
 }
 a{
-    color: $link;
-    transition: .5s all ease-in-out;
+    /*  */color: $link;
+    transition: .3s all ease-in-out;
+    font-weight: 600;
     &:hover{
-        color: $secondary;
+        // color: $secondary;
        
     };
 }
@@ -79,8 +81,8 @@ a.btn{
     padding: .5rem;
     text-align: center;
     // border-radius: 30px;
-    font-size: 16px;
-    color: $dark;
+    font-size: 14px;
+    color: $very-dark-blue;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
     position: relative;
@@ -88,19 +90,33 @@ a.btn{
     &:before{
        content: "";
         position: absolute;
-        bottom: .3rem;
+        bottom: .35rem;
         left: 0;
         width: 100%;
         height: .7rem;
-        background: hsla(51, 100%, 49%, 0.404);
+        
+        opacity: 30%;
         z-index: -1;
         border-radius: .5rem;
         transition: .35s;
+       
     }
+    &.yellow{
+        &:before{
+            content: '';
+            background: hsla(51, 100%, 49%);
+      }
+     }
+     &.red{
+         &:before{
+            content: '';
+             background: hsl(7, 99%, 70%);
+       }
+      }
     &:hover{
         // background-color: $secondary;
         &:before{
-            background: hsla(51, 69%, 37%, 0.404);
+           opacity: 100%;
         }
         
     }
@@ -108,10 +124,10 @@ a.btn{
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.h1,.h2,.h3,.h4{
     font-family: $secondaryFont;
     font-weight: 900;
-    color: $dark;
+    color: $very-dark-blue;
     // font-weight: 500;
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
     line-height: 2rem;
     
@@ -119,13 +135,17 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.h1,.h2,.h3,.h4{
         font-family: 'Montserrat', sans-serif;
         display: block;
         width: 100%;
-        color: $primary;
+        // color: $primary;
         font-weight: 600;
       
     }
+    &.uppercase{
+        text-transform: uppercase;
+    }
 }
 h1,.h1{
-    font-size: 26px;
+    font-size: 32px;
+    line-height: 2.5rem;
     span{
         font-size: 20px;
         line-height: 28px ;
@@ -165,7 +185,9 @@ h1,.h1{
     }
 }
 h2,.h2{
-    font-size: 25px;
+    font-size: 32px;
+    // margin: 0 15px;
+    line-height: 2.5rem;
     span{
         font-size: 20px;
         line-height: 28px ;
@@ -238,7 +260,7 @@ h3,.h3{
 
 .space{
     // padding: 0 0 100px 0;
-    padding-bottom: 100px;
+    padding-bottom: 70ox;
     @media  screen and (min-width:$small) {
         // padding: 0 0 110px 0;
         padding-bottom: 110px;
@@ -255,7 +277,7 @@ h3,.h3{
         padding-bottom: 0;
     }
     &.first{
-        padding-top: 100px;
+        padding-top: 70px;
         @media  screen and (min-width:$small) {
             // padding: 0 0 110px 0;
             padding-top: 110px;
@@ -277,10 +299,10 @@ dl{
         padding-bottom: 0;
         font-weight: 600;
         display: block;
-        background-color: $light;
+        background-color: $white;
     }
     dd{
-        background-color: $light;
+        background-color: $white;
         padding-top: 0;
         padding: $gap;
         &:not(:last-child){

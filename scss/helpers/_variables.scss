@@ -1,20 +1,22 @@
 $maxWidth: 1355px;
-$gap: 18px;
-$small: 375px; 
-$medium: 768px;
-$large: 1200px;
+$gap: 20px;
+$small: 376px; 
+$medium: 1200px;
+$large: 1440px;
 
-$soft-red:#fe7867;
-$yellow:#fad400;
-$dark-cyan:#25564b; //graphic design text
-$dark-blue: #19536b; //photography text
-$medium-cyan: #458c7e; //footer  test test test test 
+$soft-red:hsl(7, 99%, 70%);
+$yellow:hsl(51, 100%, 49%);
+$dark-cyan:hsl(167, 40%, 24%); //graphic design text
+$dark-blue: hsl(198, 62%, 26%); //photography text
+$medium-cyan: hsl(168, 34%, 41%); //footer
 
-$very-dark-blue: #23303e;
-$very-dark-grayish-blue: #5a636c; 
-$dark-grayish-blue: #818498; 
-$grayish-blue:#a7abae;
+$very-dark-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%); 
+$dark-grayish-blue: hsl(232, 10%, 55%); 
+$grayish-blue:hsl(210, 4%, 67%);
 $white: #ffffff;
 
-$mainFont: 'Mulish', sans-serif;
+$mainFont: 'Barlow', sans-serif;
 $secondaryFont:'Fraunces', serif;
+
+$link:#9fb3cc;
