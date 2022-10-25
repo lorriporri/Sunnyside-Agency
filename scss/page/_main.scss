@@ -50,9 +50,10 @@ body.index{
    @media screen and (min-width:$small){
     // max-height:535px;
    }
-    @media screen and (min-width:$large) {
+    @media screen and (min-width:$medium) {
         height: 100vh;
         background-size: cover;
+        background-position: center;
         background-image: url(../../images/desktop/image-header.jpg);
     }
 
@@ -62,7 +63,7 @@ body.index{
         justify-content: center;
         margin-top: 5.5rem;
 
-        @media screen and (min-width:$large) {
+        @media screen and (min-width:$medium) {
             // margin-top: 210px;
             margin: 210px auto;
             
@@ -147,13 +148,13 @@ body.index{
         
         &.first{
             flex-direction: column-reverse;
-            @media screen and (min-width:$large) {
+            @media screen and (min-width:$medium) {
                 display: grid;
                 grid-template-columns: repeat(2, 50vw);
             }
         }
         &.second{
-            @media screen and (min-width:$large) {
+            @media screen and (min-width:$medium) {
                 display: grid;
                 grid-template-columns: repeat(2, 50vw);
             }
@@ -171,6 +172,14 @@ body.index{
             min-width: 50vw;
             height: auto;
             max-height: 100%;
+            @media screen and (min-width:$small){
+                height:20rem;
+                width: 100%;
+                object-fit: cover;
+            }
+            @media screen and (min-width:$medium){
+                height: 30rem;
+            }
         }
       
       } 
@@ -187,10 +196,21 @@ body.index{
             // transform: translateX(18px);
             // height: auto;
             max-height: 100%;
+            @media screen and (min-width:$small){
+                height:20rem;
+                width: 100%;
+                object-fit: cover;
+            }
+            @media screen and (min-width:$medium){
+                height: 30rem;
+            }
+            
+            
+            
         }
       }
       &.third{
-        @media screen and (min-width:$large) {
+        @media screen and (min-width:$medium) {
             display: grid;
             grid-template-columns: repeat(2, 50vw);
         }
@@ -202,6 +222,21 @@ body.index{
         background-size: cover;
         background-position: center center;
         padding: 350px 20px 50px; 
+        @media screen and (min-width:$small){
+            padding: 300px 50px 100px; 
+        }
+        @media screen and (min-width:$small-extra){
+            padding: 300px 150px 80px; 
+        }
+        @media screen and (min-width:$medium) {
+            padding: 300px 100px 100px; 
+            min-height: 40rem;
+            background-position:center top;
+        }
+        @media screen and (min-width:$large){
+            padding: 400px 120px 80px; 
+            min-height: 40rem;
+        }
         &.second{
             p{
                 color: $dark-blue;
@@ -218,16 +253,25 @@ body.index{
            
            
         }
-        @media screen and (min-width:$large) {
-            min-height: 36rem;
-        }
 
             &.first{
-                background-image: url(../../images/desktop/image-graphic-design.jpg);
+                background-image: url(../../images/mobile/image-graphic-design.jpg);
+                @media screen and (min-width:$small){
+                    background-image: url(../../images/mobile/image-graphic-design-medium.jpg);
+                }
+                @media screen and (min-width:$medium){}
             
+                background-image: url(../../images/desktop/image-graphic-design.jpg);
             }
+          
             &.second{
-                background-image: url(../../images/desktop/image-photography.jpg);
+                background-image: url(../../images/mobile/image-photography.jpg);
+                @media screen and (min-width:$small){
+                    background-image: url(../../images/mobile/image-photography-medium.jpg);
+                }
+                @media screen and (min-width:$medium){
+                    background-image: url(../../images/desktop/image-photography.jpg);
+                }
                 
             }
         }
@@ -257,19 +301,28 @@ body.index{
         h1,h2{
             padding: 0 20px;
         }
-        
-        @media screen and (min-width:$large){
+        @media screen and (min-width:$small){
+            margin:80px 50px;
+        }
+        @media screen and (min-width:$small-extra){
+            margin:80px 150px;
+        }
+        @media screen and (min-width:$medium){
             position: relative;
             // bottom: 22rem;
-            max-width: 50%;
-            width: 37rem;
+            max-width: 50vw;
+            // width: 55rem;
             text-align:center;
-            right: -10rem;
+            // right: -10rem;
+            margin: 30px 100px;
+        }
+        @media screen and (min-width:$large){
+            margin:50px 100px;
         }
         
         p{
             color: $dark-grayish-blue;
-            @media screen and (min-width:$large){
+            @media screen and (min-width:$medium){
                 // color: $white;
 
             }
@@ -278,8 +331,14 @@ body.index{
   
     .testimonials{
         padding: 50px 22px 70px;
-        @media screen and (min-width:$large){
+        @media screen and (min-width:$small){
             padding:160px 22px;
+        }
+        @media screen and (min-width:$small-extra){
+            padding: 160px 100px;
+        }
+        @media screen and (min-width:$medium){
+            padding:160px 50px;
         }
     
         h5{
@@ -287,7 +346,7 @@ body.index{
             text-align: center;
             font-size: 18px;
             letter-spacing: .2rem;
-            @media screen and (min-width:$large) {
+            @media screen and (min-width:$medium) {
                 font-size: 22px;
             }
         }
@@ -309,7 +368,7 @@ body.index{
                     font-weight: 900;
                     font-family: $secondaryFont;
                     color: black;
-                    @media screen and (min-width:$large){
+                    @media screen and (min-width:$medium    ){
                         padding-bottom: 0;
                     }
                     span{
@@ -323,7 +382,7 @@ body.index{
                 }
                 
             }
-            @media screen and (min-width:$large){
+            @media screen and (min-width:$medium){
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 
@@ -346,7 +405,12 @@ body.index{
             height: 100%;
             height: 100%;
         }
-        @media screen and (min-width:$large){
+
+        @media screen and (min-width:$small){
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media screen and (min-width:$medium){
             display: grid;
             grid-template-columns: repeat(4, 1fr);
         }
@@ -368,43 +432,58 @@ body.index{
         display: flex;
         width: 100%;
         justify-content: center;
+        padding-top: 1.5rem;
         >div{
             
-           
+           &.facebook, &.instagram, &.twitter, &.pinterest{
+            position: relative;
+            &.img.hover{
+                position: absolut;
+            }
+            
+           }
             a{
                 
                 img{
                     
-                    
+                    padding: 0 1rem;
                     &.normal{
-                        position: relative;
+                        // position: relative;
                         // display: block;
                         visibility: visible;
-                        /* transition: all .3s ease-in-out; */
+                        transition: all .3s ease-in-out;
+                        
                     }
                     &.hover{
                         position: absolute;
                         right: 0;
                         left: 0;
+                        bottom: 0;
                         /* display: none; */
                         visibility: hidden;
-                        /* transition: all .3s ease-in-out; */
+                        // transition: all .3s ease-in; 
                     }
 
                 }
                 &:hover{
                     img{
                         &.normal{
-                            
+                            // position: relative;
+                        
                             /* display: none; */
                             visibility: hidden;
+                            // transition: all .3s ease-in-out; 
                             /* transition: all .3s ease-in-out; */
                         }
                         &.hover{
-                            
+                            // position: absolute;
                             /* transition: all .3s ease-in-out; */
                             // display: block;
                             visibility: visible;
+                            // transition: all .3s ease-in-out; 
+                            // right: 0;
+                            // left: 0;
+                            // transition: all .3s ease-in-out; 
                         }
 
                     }

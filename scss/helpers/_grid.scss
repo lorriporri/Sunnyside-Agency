@@ -29,6 +29,9 @@
   @media screen and (min-width:$small){
     max-width: 325px;
   }
+  @media screen and (min-width:$medium){
+    max-width: $large;
+  }
   &.full {
     max-width: none;
   }
