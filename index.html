@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link type="text/css" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link type="text/css" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@600;1,600&display=swap" rel="stylesheet"> 
+<link rel="js" href="./sunnyside-app/src/main.js">
 </head>
 <body class="index">
     <div class="header">
@@ -59,7 +60,10 @@
                         We are Creatives
                     </p>
                 </div>
-           
+                <div id="app">
+                    {{scroll}}
+                    <script type="module" src="/sunnyside-app/src/main.js"></script>
+                </div>
         </div>
     </div>
 </div>
@@ -217,8 +221,16 @@
         </a>
     </div>
   </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Laura Burzeja</a>.
+  </div>
 </div>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>
-    </script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vuex"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="/sunnyside-app/src/main.js"></script>
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>
+    </script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
 </body>
 </html>
